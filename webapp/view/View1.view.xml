@@ -1,0 +1,20 @@
+<mvc:View
+	controllerName="MyData.controller.View1"
+	xmlns:l="sap.ui.layout"
+	xmlns:u="sap.ui.unified"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.m"
+	class="viewPadding">
+
+
+			<u:FileUploader
+				id="fileUploader"
+				name="myFileUpload"
+				uploadUrl="upload/"
+				tooltip="Upload your file to the local server"
+				uploadComplete="handleUploadComplete"/>
+			<Button 
+				text="Read my file" press="handleUploadPress"/>
+
+
+</mvc:View>
